@@ -1,4 +1,4 @@
-﻿namespace MistrzowieWynajmu.Models.Database
+﻿namespace MistrzowieWynajmu.Models
 {
     public class Property
     {
