@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     templateUrl: './home.component.html'
 })
 export class HomeComponent {
-    title: string = "to jest title z komponentu";
-    isCool: boolean = true;
-    year: number = 2017;
+	title: string = "to jest title z komponentu.";
+	isCool: boolean = true;
+	year: number = 2017;
 }
