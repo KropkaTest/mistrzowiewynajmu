@@ -28,6 +28,8 @@ namespace MistrzowieWynajmu
             services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(dbConnectionString));
 
             services.AddScoped<IPropertyRepository, PropertyRepository>();
+            services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<IOwnerRepository, OwnerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
