@@ -39,7 +39,7 @@ export class HttpPropertiesBackedService extends PropertiesBackedService {
             .map(response => response.json() as number);
     }
     deleteProperty(id: number): Observable<number> {
-        return this.http.get(this.getPropertyUrl + id, this.jsonContentOptions)
+        return this.http.post(this.deletePropertyUrl + id, this.jsonContentOptions)
             .map(response => response.json() as number);
     }
 }
