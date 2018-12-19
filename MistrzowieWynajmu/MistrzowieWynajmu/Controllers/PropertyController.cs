@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MistrzowieWynajmu.Models;
 using MistrzowieWynajmu.Models.Interfaces;
 
 namespace MistrzowieWynajmu.Controllers
@@ -17,7 +18,7 @@ namespace MistrzowieWynajmu.Controllers
         [HttpGet("[action]")]
         public IActionResult GetProperties()
         {
-            return new JsonResult(_propertyRepository.GetAll());
+            return new JsonResult(_propertyRepository.GetAllProperties());
         }
     }
 }
